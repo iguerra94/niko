@@ -1,0 +1,380 @@
+.content__container {
+  position: relative;
+  padding-top: 100px;
+}
+
+.product__container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 55px;
+  padding: 0 55px;
+}
+
+.product__images {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.product__image {
+  width: 397px;
+  height: 496px;
+  cursor: pointer;
+
+  background-size: cover;
+  box-shadow: 0px 0px 6px transparent;
+  transition: box-shadow .3s linear;
+  will-change: box-shadow;
+}
+
+.product__image:hover {
+  box-shadow: 0px 0px 6px var(--color-grey);
+}
+
+#product__image-1 {
+  background-image: url(/assets/images/product_image_1.svg);
+}
+
+#product__video-1 {
+  background-image: url(/assets/images/product_video_1.svg);
+}
+
+#product__video-1:hover {
+  background-image: url(/assets/images/product_video_1.gif);
+}
+
+#product__image-2 {
+  background-image: url(/assets/images/product_image_2.svg);
+}
+
+#product__image-3 {
+  background-image: url(/assets/images/product_image_3.svg);
+}
+
+.product__data-container {
+  flex: 1;
+}
+
+.product__data {
+  margin-top: 9px;
+}
+
+.product__data-gender {
+  font-size: 16px;
+  font-family: 'AvenirBook', sans-serif;
+  color: var(--color-black-1);
+}
+
+.product__data-model-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.product__data-model-name {
+  font-family: 'AvenirBlack', sans-serif;
+  font-size: 28px;
+}
+
+.product__data-model-price {
+  font-family: 'AvenirBlack', sans-serif;
+  font-size: 16px;
+}
+
+.product__data-color-option-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 8px;
+  width: fit-content;
+
+  margin-top: 8px;
+}
+
+.product__data-color-option-image {
+  width: 69px;
+  height: 69px;
+  opacity: 0.5;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 0.5px solid transparent;
+
+  transition: all .3s linear;
+}
+
+.product__data-color-option-image:hover, .product-color-option-selected {
+  opacity: 1;
+  border: 0.5px solid var(--color-black-1);
+}
+
+#product__data-color-option-image-1 {
+  background-image: url(/assets/images/product_color_option_white.svg);
+  background-repeat: no-repeat;
+}
+
+#product__data-color-option-image-2 {
+  background-image: url(/assets/images/product_color_option_black.svg);
+  background-repeat: no-repeat;
+}
+
+.product__sizes {
+  display: grid;
+  row-gap: 8px;
+  margin-top: 39px;
+}
+
+.product__sizes-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product__sizes-title > span {
+  font-family: 'AvenirBlack', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.product__sizes-title-principal {
+  color: var(--color-black-1);
+}
+
+.product__sizes-title-secondary {
+  color: var(--color-grey);
+}
+
+.product__sizes-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.product__sizes-item {
+  height: 48px;
+  background-color: var(--color-grey-2);
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 4px;
+  color: rgba(17, 17, 17, 0.2);
+  font-size: 16px;
+  text-transform: uppercase;
+
+  outline: none;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.product__sizes-item:hover, .product__sizes-item-selected {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black-1);
+  color: var(--color-black-1);
+}
+
+.product__actions {
+  margin-top: 16px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 8px;
+}
+
+.product__actions-item {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 24px;
+  height: 48px;
+  font-family: 'AvenirBlack', sans-serif;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-add-to-cart {
+  background-color: var(--color-black-1);
+  color: var(--color-white);
+
+  transition: all .2s linear;
+}
+
+#btn-add-to-cart:hover {
+  background-color: var(--color-grey-3);
+  color: var(--color-white);
+}
+
+#btn-add-to-favorites {
+  background-color: var(--color-white);
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  color: var(--color-black-1);
+
+  transition: all .2s linear;
+}
+
+#btn-add-to-favorites:hover {
+  background-color: var(--color-grey-2);
+  border: 1px solid rgba(117, 117, 117, 0.7);
+}
+
+.bg-black-1 {
+  background-color: var(--color-black-1);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+.color-black-1 {
+  color: var(--color-black-1);
+}
+
+#icon-favorite {
+  background-image: url(/assets/icons/favorite.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  margin-left: 8px;
+}
+
+.icon__small {
+  width: 16px;
+  height: 16px;
+}
+
+.product__shipment {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 16px;
+
+  margin-top: 40px;
+}
+
+.font-weight-book {
+  font-family: 'AvenirBook', sans-serif;
+  font-size: 16px;
+}
+
+.font-weight-roman {
+  font-family: 'AvenirRoman', sans-serif;
+}
+
+.font-weight-black {
+  font-family: 'AvenirBlack', sans-serif;
+}
+
+.text-decoration-underline {
+    text-decoration: underline;
+}
+
+.line-height-26px {
+  line-height: 26px;
+}
+
+.cursor__pointer {
+  cursor: pointer;
+}
+
+.products__main-trends-container {
+  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products__main-trends-title {
+  font-family: 'AvenirBlack', sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  padding-left: 55px;
+}
+
+.products__main-trends-cards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  column-gap: 24px;
+  overflow-x: scroll;
+  padding-top: 24px;
+  padding-bottom: 64px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.products__main-trends-cards::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.products__main-trends-cards {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.products__main-trends-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  box-shadow: 0px 0px 6px transparent;
+  transition: box-shadow .3s linear;
+  will-change: box-shadow;
+}
+
+.products__main-trends-card-container:first-child {
+  margin-left: 55px;
+}
+
+.mr-55px {
+  margin-right: 55px;
+}
+
+.products__main-trends-card:hover {
+  box-shadow: 0px 0px 6px var(--color-grey);
+}
+
+.product__card-image {
+  width: 385px;
+  height: 385px;
+  background-size: cover;
+}
+
+#product__card-image-1 {
+  background-image: url(/assets/images/product_trend_image_1.svg);
+}
+
+#product__card-image-2 {
+  background-image: url(/assets/images/product_trend_image_2.svg);
+}
+
+#product__card-image-3 {
+  background-image: url(/assets/images/product_trend_image_3.svg);
+}
+
+#product__card-image-4 {
+  background-image: url(/assets/images/product_trend_image_4.svg);
+}
+
+.product__card-data {
+  display: grid;
+  row-gap: 16px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+.product__card-data-model-name, .product__card-data-gender, .product__card-data-model-price {
+  line-height: 24px;
+}
+
+.product__card-data-model-name, .product__card-data-model-price {
+  font-family: 'AvenirBlack', sans-serif;
+  color: var(--color-black-1);
+}
+
+.product__card-data-gender {
+  font-family: 'AvenirBook', sans-serif;
+  color: var(--color-grey);
+}
