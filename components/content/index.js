@@ -130,11 +130,13 @@ function Content() {
                         productData.sizes_selected.length === 0
                       }
                       onClick={() => {
-                        const cartItemsUpdated = Array.from(products.currentCartItems).filter(product => product.product_id !== productData.product_id);
-                        setProducts({
-                          currentFavoriteItems: [...products.currentFavoriteItems],
-                          currentCartItems: [...cartItemsUpdated, productData]
-                        });
+                        if (productData.sizes_selected.length > 0) {
+                          const cartItemsUpdated = Array.from(products.currentCartItems).filter(product => product.product_id !== productData.product_id);
+                          setProducts({
+                            currentFavoriteItems: [...products.currentFavoriteItems],
+                            currentCartItems: [...cartItemsUpdated, productData]
+                          });
+                        }
                       }}>
                       <span>{products.currentCartItems.filter(product => product.product_id === productData.product_id).length === 0 ? "Agregar a la bolsa de compra": "Agregado a la bolsa de compra"}</span>
                       <span
