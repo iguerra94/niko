@@ -1,4 +1,279 @@
+.main__container {
+  display: grid;
+  row-gap: 32px;
+  margin-bottom: 64px;
+}
+
 .cart__container {
   position: relative;
+  padding: 0 55px;
+
   padding-top: 100px;
+
+  display: flex;
+}
+
+.cart__details {
+  margin-right: 55px;
+  flex: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart__details > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.cart__details-shipment-special-offer {
+  border: 1px solid var(--color-grey);
+  padding: 16px;
+
+  display: grid;
+  row-gap: 4px;
+  height: 98px;
+}
+
+.cart__details-shipment-special-offer-title {
+  font-family: "AvenirBlack", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--color-orange);
+}
+
+.cart__details-shipment-special-offer-message {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-grey);
+}
+
+.cart__details-shipment-special-offer-link {
+  font-family: "AvenirRoman", sans-serif;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cart__items-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__items-details-title {
+  font-family: "AvenirBlack", sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 16px;
+}
+
+.cart__items-list {
+  list-style: none;
+  padding: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+}
+
+.cart__items-list-item {
+  display: grid;
+  column-gap: 16px;
+  grid-template-columns: 128px auto;
+}
+
+.cart__item-product-image {
+  width: 128px;
+  height: 128px;
+  background-size: contain;
+}
+
+#cart__item-product-image-1 {
+  background-image: url(/assets/images/product_color_option_white.svg);
+}
+
+.cart__item-product-data-container {
+  display: grid;
+  row-gap: 16px;
+}
+
+.cart__item-product-data {
+  display: grid;
+  row-gap: 4px;
+}
+
+.cart__item-product-data-row {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.flex-row-justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.cart__item-product-size-container {
+  margin-right: 16px;
+}
+
+.cart__item-product-title {
+  font-family: "AvenirBlack", sans-serif;
+}
+
+.color-grey {
+  color: var(--color-grey);
+}
+
+.cart__item-product-action {
+  color: var(--color-grey);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cart__item-product-action:not(:last-child) {
+  margin-right: 16px;
+}
+
+.cart__shipment-details {
+  display: grid;
+  row-gap: 4px;
+  height: 52px;
+}
+
+.cart__shipment-details-title {
+  font-family: "AvenirBlack", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cart__shipment-details-data {
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.cart__shipment-details-date {
+  margin-right: 8px;
+}
+
+.cart__shipment-details-actions {
+}
+
+.cart__shipment-details-action {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cart__details-shipment-special-offer-message {
+}
+
+.cart__details-shipment-special-offer-link {
+}
+
+.cart__payment-summary {
+  flex: 1;
+}
+
+.cart__payment-summary-data {
+  margin-bottom: 16px;
+  display: grid;
+  row-gap: 16px;
+}
+
+.cart__payment-summary-data-title {
+  font-family: "AvenirBlack", sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.cart__payment-summary-data-item {
+  display: flex;
+  justify-content: space-between;
+  line-height: 24px;
+}
+
+.cart__payment-summary-data-item-featured {
+  font-family: "AvenirBlack", sans-serif;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  border-top: 1px solid rgba(117, 117, 117, 0.2);
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+.cart__summary-payment-options {
+  display: grid;
+  row-gap: 16px;
+}
+
+.cart__summary-payment-option {
+}
+
+.btn {
+  font-family: "AvenirBlack", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 74px;
+  cursor: pointer;
+}
+
+.btn-dark {
+  color: var(--color-white);
+  background-color: var(--color-black-1);
+}
+
+.btn-light {
+  background: var(--color-grey-2);
+  border: 0.5px solid var(--color-grey);
+}
+
+.color__indigo {
+  color: var(--color-indigo);
+}
+
+.color__turquoise {
+  color: var(--color-turquoise);
+}
+
+.divider {
+  margin: 0 55px;
+  height: 1px;
+  background-color: rgba(117, 117, 117, 0.2);
+}
+
+.favorites__container {
+  padding: 0 55px;
+
+  display: grid;
+  row-gap: 4px;
+
+  width: fit-content;
+}
+
+.favorites__title {
+  font-family: "AvenirBlack", sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.favorites__message-user-logged-out {
+  font-size: 16px;
+  line-height: 24px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8px;
+}
+
+.favorites__message-user-logged-out-link {
+  font-family: "AvenirRoman", sans-serif;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
 }
