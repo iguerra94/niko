@@ -26,7 +26,7 @@ const Header = () => {
         </div>
         <div className={styles["nav__actions"]}>
           <AppStateContext.Consumer>
-            { products => (
+            { ({products, _}) => (
               <ul className={styles["nav__actions-items"]}>
                 <li className={styles["nav__actions-item"]}>
                   <div className={styles["search-box"]}>

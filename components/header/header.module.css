@@ -110,7 +110,7 @@ nav.nav__container {
 }
 
 .icon-favorite {
-  background-image: url(/assets/icons/favorite.svg);
+  background-image: url(/assets/icons/favorite-outline.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
