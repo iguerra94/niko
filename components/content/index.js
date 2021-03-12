@@ -48,7 +48,7 @@ function Content() {
               <fieldset className={styles["product__data-color-option-images-fieldset"]}>
                 <label className={styles["product__data-color-option-images-label"]}>
                   <input className={styles["input__radio"]} type="radio" checked={productData.model_color === "Blanco"} onChange={(e) => {
-                    setProductData({  
+                    setProductData({
                       ...productData,
                       "model_color": e.target.checked ? "Blanco" : "Negro",
                       "model_image_url": e.target.checked ? productItemsData[0].image_urls.model_white : productItemsData[0].image_urls.model_black
